@@ -4,7 +4,6 @@
 <div class="container">
     <h1>Создать новый мем</h1>
 
-    {{-- Flash-сообщения --}}
     @if (session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
@@ -13,7 +12,6 @@
         <div class="alert alert-danger">{{ session('error') }}</div>
     @endif
 
-    {{-- Ошибки валидации --}}
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul class="mb-0">
